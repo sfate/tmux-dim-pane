@@ -1,9 +1,9 @@
 # tmux-dim-pane
 
-Small tmux plugin for stable inactive pane dimming.
+Small tmux plugin for stable greyscale inactive pane dimming.
 
 Tmux cannot fade arbitrary terminal colors with an opacity value.
-The closest stable native behavior is to keep the active pane at the terminal default style and apply a softer `window-style` to inactive panes.
+The closest stable native behavior is to keep the active pane at the terminal default style and apply a greyscale `window-style` to inactive panes.
 
 ## Options
 
@@ -11,10 +11,10 @@ The closest stable native behavior is to keep the active pane at the terminal de
 set -g @tmux-dim-pane-theme "auto" # auto, dark, light
 
 set -g @tmux-dim-pane-active-style "fg=terminal,bg=terminal"
-set -g @tmux-dim-pane-dark-style "fg=colour250,bg=colour235"
-set -g @tmux-dim-pane-light-style "fg=colour245,bg=colour230"
+set -g @tmux-dim-pane-dark-style "fg=colour244,bg=colour235"
+set -g @tmux-dim-pane-light-style "fg=colour245,bg=colour252"
 
-set -g @tmux-dim-pane-active-border-style "fg=#8ec07c"
+set -g @tmux-dim-pane-active-border-style "fg=#d8a657"
 set -g @tmux-dim-pane-border-style "fg=#555555"
 ```
 
