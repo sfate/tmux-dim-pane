@@ -18,8 +18,9 @@ set -g @tmux-dim-pane-active-border-style "fg=#d8a657"
 set -g @tmux-dim-pane-border-style "fg=#555555"
 ```
 
-`auto` uses macOS `AppleInterfaceStyle` when available. On other systems it
-falls back to `@tmux-gruvbox`, then `dark`.
+`auto` uses `defaults read -g AppleInterfaceStyle` on macOS: `Dark` selects the
+dark theme, and any other result selects the light theme. When the `defaults`
+command is unavailable, it falls back to `@tmux-gruvbox`, then `dark`.
 
 ## Install
 
