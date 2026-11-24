@@ -27,7 +27,7 @@ falls back to `@tmux-gruvbox`, then `dark`.
 
 Add plugin to the list of TPM plugins in `.tmux.conf`:
 
-    set -g @plugin 'tmux-plugins/tmux-logging'
+    set -g @plugin 'sfate/tmux-dim-pane'
 
 Hit `prefix + I` to fetch the plugin and source it.
 
@@ -35,11 +35,11 @@ Hit `prefix + I` to fetch the plugin and source it.
 
 Clone the repo:
 
-    $ git clone https://github.com/sfate/tmux-dim-pane ~/clone/path
+    $ git clone https://github.com/sfate/tmux-dim-pane ~/.tmux/plugins/tmux-dim-pane
 
 Add this line to the bottom of `.tmux.conf`:
 
-    run-shell ~/clone/path/logging.tmux
+    run-shell ~/.tmux/plugins/tmux-dim-pane/tmux-dim-pane.tmux
 
 Reload TMUX environment:
 
