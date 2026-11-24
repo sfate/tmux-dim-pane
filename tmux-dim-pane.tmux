@@ -45,15 +45,15 @@ detect_theme() {
 
 theme="$(detect_theme)"
 active_style="$(get_tmux_option "@tmux-dim-pane-active-style" "fg=terminal,bg=terminal")"
-active_border_style="$(get_tmux_option "@tmux-dim-pane-active-border-style" "fg=#8ec07c")"
+active_border_style="$(get_tmux_option "@tmux-dim-pane-active-border-style" "fg=#d8a657")"
 border_style="$(get_tmux_option "@tmux-dim-pane-border-style" "fg=#555555")"
 
 case "$theme" in
   light)
-    inactive_style="$(get_tmux_option "@tmux-dim-pane-light-style" "fg=colour245,bg=colour230")"
+    inactive_style="$(get_tmux_option "@tmux-dim-pane-light-style" "fg=colour245,bg=colour252")"
     ;;
   *)
-    inactive_style="$(get_tmux_option "@tmux-dim-pane-dark-style" "fg=colour250,bg=colour235")"
+    inactive_style="$(get_tmux_option "@tmux-dim-pane-dark-style" "fg=colour244,bg=colour235")"
     ;;
 esac
 
